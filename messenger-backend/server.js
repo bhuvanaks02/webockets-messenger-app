@@ -12,7 +12,7 @@ const port = process.env.PORT || 9000;
 const pusher = new Pusher({
     appId: "1793677",
     key: "your-key",
-    secret: "your-secret",
+    secret: "your-value",
     cluster: "ap2",
     useTLS: true
   });
@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Headers","*");
     next();
 });
-const connection_url = 'your-connection-string'
+const connection_url = 'connection-string'
 mongoose.connect(connection_url);
 
 const db = mongoose.connection;
