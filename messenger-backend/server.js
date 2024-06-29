@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Headers","*");
     next();
 });
-const connection_url = 'mongodb+srv://admin:HelloWorld12345@cluster0.9gn7eil.mongodb.net/messenger-app?retryWrites=true&w=majority&appName=Cluster0'
+const connection_url = 'your-mongo-uri'
 mongoose.connect(connection_url);
 
 const db = mongoose.connection;
