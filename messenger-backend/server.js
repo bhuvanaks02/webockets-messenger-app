@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Headers","*");
     next();
 });
-const connection_url = 'your key'
+const connection_url = 'your mongo connection string'
 mongoose.connect(connection_url);
 
 const db = mongoose.connection;
