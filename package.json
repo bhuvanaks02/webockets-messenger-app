@@ -4,14 +4,15 @@
     "@dicebear/core": "^8.0.1",
     "express": "^4.19.2",
     "mongoose": "^8.4.4",
-    "pusher-js": "^8.4.0-rc2"
+    "pusher-js": "^8.4.0-rc2",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
   },
   "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts --openssl-legacy-provider"
+    "deploy": "gh-pages -d build"
   }
 }
