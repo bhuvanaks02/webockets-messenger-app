@@ -11,8 +11,8 @@ const port = process.env.PORT || 9000;
 
 const pusher = new Pusher({
     appId: "1793677",
-    key: "43e5f12ad03cb99a6676",
-    secret: "57decc969c3b9a40690a",
+    key: "your key",
+    secret: "your value",
     cluster: "ap2",
     useTLS: true
   });
@@ -25,7 +25,7 @@ app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Headers","*");
     next();
 });
-const connection_url = 'mongodb+srv://admin:HelloWorld12345@cluster0.9gn7eil.mongodb.net/messenger-app?retryWrites=true&w=majority&appName=Cluster0'
+const connection_url = 'your key'
 mongoose.connect(connection_url);
 
 const db = mongoose.connection;
